@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Online Booking System</h1>
+        <p>Book your tickets easily and quickly</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Book Your Ticket</h2>
+
+        <form id="bookingForm">
+
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label>Booking Type</label>
+            <select id="type" required>
+                <option value="">Select Type</option>
+                <option value="Movie">Movie</option>
+                <option value="Concert">Concert</option>
+                <option value="Event">Event</option>
+            </select>
+
+            <label>Date</label>
+            <input type="date" id="date" required>
+
+            <label>Number of Tickets</label>
+            <input type="number" id="tickets" min="1" max="10"
+                   placeholder="Enter number of tickets" required>
+
+            <button type="submit">Book Now</button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Online Booking System</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
